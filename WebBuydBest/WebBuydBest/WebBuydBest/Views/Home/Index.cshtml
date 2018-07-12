@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<style>
+    body
+    {
+        padding-top: 60px;
+    }
+</style>
+<form action="api/Upload/upload" enctype="multipart/form-data">
+<div class="row fileupload-buttonbar">
+    <div class="span7">
+        <div class="well">
+            <i class="icon-plus"></i><span>&nbsp;&nbsp;Add files...</span>
+            <input type="file" id="fileupload" name="fileupload" accept="image/*" multiple="multiple" />
+            <input type="submit" id="btnUploadAll" class="btn btn-success pull-right" />
+                Upload 
+                @*</button>*@
+            <div class="clearfix">
+            </div>
+            <div class="progress">
+                <div class="bar" id="overallbar" style="width: 0%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span7">
+        <div class="well hide" id="filelistholder">
+        </div>
+    </div>
+ <select name="Amazon" id="Amazon">
+<option value="www.Amazon.com">White</option>
+<option value="www.Amazon.UK">Red</option>
+<option value="www.Amazon.FR">Yellow</option>
+<option value="www.Amazon.DE">Blue</option>
+<option value="www.Amazon.IT">Green</option>
+<option value="www.Amazon.ES">Green</option>
+</select>
+    <div class="span7">
+    </div>
+</div>
+</form>
+@section PageScripts
+{
+    <script type="text/javascript">
+        $(function () {
+            $('#fileupload').fileupload({
+                dataType: "json",
+                formData: function (form) {
+                        return [{ name: 'site', value: $('#Amazon').val() }];},
+                url: "api/Upload/Upload",
+                limitConcurrentUploads: 1,
+                sequentialUploads: true,
+                progressInterval: 100,
+                maxChunkSize: 10000,
+                add: function (e, data) {
+                    $('#filelistholder').removeClass('hide');
+                    data.context = $('<div />').text(data.files[0].name).appendTo('#filelistholder');
+                    $('</div><div class="progress"><div class="bar" style="width:0%"></div></div>').appendTo(data.context);
+                    $('#btnUploadAll').click(function () {
+                        data.submit();
+                    });
+
+                    // #some_same -> dohvacanje po id-ju
+                    // .some_same -> dohvacanje po class
+                    // same_name -> dohvacanje po imenu
+                },
+                done: function (e, data) {
+                    data.context.text(data.files[0].name + '... Completed');
+                    $('</div><div class="progress"><div class="bar" style="width:100%"></div></div>').appendTo(data.context);
+                },
+                progressall: function (e, data) {
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    $('#overallbar').css('width', progress + '%');
+                },
+                progress: function (e, data) {
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    data.context.find('.bar').css('width', progress + '%');
+                }
+            });
+        });
+    </script>
+}
