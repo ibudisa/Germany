@@ -1,0 +1,9 @@
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\bin\Release\ServerApplication.exe.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\bin\Release\ServerApplication.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\bin\Release\ServerApplication.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.Properties.Resources.resources
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.csproj.GenerateResource.Cache
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ServerApplication\ServerApplication\obj\Release\ServerApplication.Server.resources

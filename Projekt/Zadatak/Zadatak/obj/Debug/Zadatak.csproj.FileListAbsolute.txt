@@ -1,0 +1,68 @@
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\obj\Debug\Zadatak.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Zadatak.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Zadatak.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.Core.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\System.Web.Providers.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\WebGrease.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.Core.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\obj\Debug\Zadatak.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\obj\Debug\Zadatak.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\Zadatak\Zadatak\bin\DAL.pdb
+C:\Zadatak\Zadatak\obj\Debug\Zadatak.csprojResolveAssemblyReference.cache
+C:\Zadatak\Zadatak\obj\Debug\Zadatak.dll
+C:\Zadatak\Zadatak\obj\Debug\Zadatak.pdb
+C:\Zadatak\Zadatak\bin\Zadatak.dll
+C:\Zadatak\Zadatak\bin\Zadatak.pdb
+C:\Zadatak\Zadatak\bin\Antlr3.Runtime.dll
+C:\Zadatak\Zadatak\bin\AspNet.ScriptManager.jQuery.dll
+C:\Zadatak\Zadatak\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Zadatak\Zadatak\bin\DAL.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.AspNet.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.Core.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.dll
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Zadatak\Zadatak\bin\EntityFramework.dll
+C:\Zadatak\Zadatak\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Zadatak\Zadatak\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Zadatak\Zadatak\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Zadatak\Zadatak\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Zadatak\Zadatak\bin\Microsoft.Web.Infrastructure.dll
+C:\Zadatak\Zadatak\bin\Newtonsoft.Json.dll
+C:\Zadatak\Zadatak\bin\System.Web.Optimization.dll
+C:\Zadatak\Zadatak\bin\System.Web.Providers.dll
+C:\Zadatak\Zadatak\bin\WebGrease.dll
+C:\Zadatak\Zadatak\bin\DAL.pdb
+C:\Zadatak\Zadatak\bin\Newtonsoft.Json.xml
+C:\Zadatak\Zadatak\bin\EntityFramework.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.Core.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Zadatak\Zadatak\bin\DotNetOpenAuth.AspNet.xml

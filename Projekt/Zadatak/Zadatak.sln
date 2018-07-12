@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak", "Zadatak\Zadatak.csproj", "{A90D1161-4C25-4A89-88E4-E5BD88996228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{49EA0B75-051A-41B0-B9FE-E714EA0DF452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A90D1161-4C25-4A89-88E4-E5BD88996228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90D1161-4C25-4A89-88E4-E5BD88996228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90D1161-4C25-4A89-88E4-E5BD88996228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90D1161-4C25-4A89-88E4-E5BD88996228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EA0B75-051A-41B0-B9FE-E714EA0DF452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EA0B75-051A-41B0-B9FE-E714EA0DF452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EA0B75-051A-41B0-B9FE-E714EA0DF452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EA0B75-051A-41B0-B9FE-E714EA0DF452}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

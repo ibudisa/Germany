@@ -1,0 +1,10 @@
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\DAL.dll.config
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\DAL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\obj\Debug\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2013\Projects\XMLCompare\DAL\obj\Debug\DAL.pdb

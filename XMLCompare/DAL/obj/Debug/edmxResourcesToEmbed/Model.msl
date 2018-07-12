@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CompareModelStoreContainer" CdmEntityContainer="CompareEntities">
+    <EntitySetMapping Name="FileData">
+      <EntityTypeMapping TypeName="CompareModel.FileData">
+        <MappingFragment StoreEntitySet="FileData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SourceFile" ColumnName="SourceFile" />
+          <ScalarProperty Name="ExpectedFile" ColumnName="ExpectedFile" />
+          <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+          <ScalarProperty Name="NodeValue" ColumnName="NodeValue" />
+          <ScalarProperty Name="Xpath" ColumnName="Xpath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Node">
+      <EntityTypeMapping TypeName="CompareModel.Node">
+        <MappingFragment StoreEntitySet="Node">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

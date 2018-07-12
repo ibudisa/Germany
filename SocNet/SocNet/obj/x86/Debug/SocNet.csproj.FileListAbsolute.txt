@@ -1,0 +1,8 @@
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\bin\Debug\SocNet.exe
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\bin\Debug\SocNet.pdb
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.Form1.resources
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.Properties.Resources.resources
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.csproj.GenerateResource.Cache
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.exe
+c:\users\ivan\documents\visual studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.pdb
+C:\Users\Ivan\Documents\Visual Studio 2010\Projects\SocNet\SocNet\obj\x86\Debug\SocNet.csprojResolveAssemblyReference.cache

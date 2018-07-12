@@ -1,0 +1,9 @@
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\bin\Release\ClientApplication.exe.config
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\bin\Release\ClientApplication.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\bin\Release\ClientApplication.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.Properties.Resources.resources
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.csproj.GenerateResource.Cache
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.exe
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.pdb
+C:\Users\Ivan\Documents\Visual Studio 2015\Projects\ClientApplication\ClientApplication\obj\Release\ClientApplication.Client.resources
