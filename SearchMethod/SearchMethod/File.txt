@@ -1,0 +1,5 @@
+This is the test file.It is used
+for purpose of representing the data to be searched for
+within the document. FromOffset and toOffset are given along with
+the pattern to be searched inside this file. Besides these parameters 
+file is also searched depending the numresults parameter.

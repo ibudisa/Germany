@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="09E8B3AD-E79E-4EBC-9C0F-817FE91AAE12" ModuleId="Data" />
+  <Module PersistentId="CFFF5068-A9FB-4611-99A9-22896D85F5B1" ModuleId="UnitTest" />
+  <Module PersistentId="76674C7D-7340-4606-B271-280D4788C669" ModuleId="SearchMethod" />
+</Modules>
