@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="24dp"
+        android:layout_y="122dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="79dp" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_x="173dp"
+        android:layout_y="76dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="27dp"
+        android:layout_y="24dp" 
+      />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="27dp"
+        android:layout_y="156dp"
+        android:onClick="onClick"
+        android:text="Back" />
+
+    <RadioGroup
+        android:id="@+id/rbtngroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="26dp"
+        android:layout_y="234dp" >
+
+        <RadioButton
+            android:id="@+id/rbtnedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Edit" />
+
+        <RadioButton
+            android:id="@+id/rbtndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <RadioButton
+            android:id="@+id/rbtninsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="192dp"
+        android:layout_y="290dp"
+        android:text="Insert" />
+
+</AbsoluteLayout>
