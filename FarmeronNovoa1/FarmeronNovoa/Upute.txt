@@ -1,0 +1,8 @@
+Poštovani,
+Šaljem projekt vezan za zadatak.
+Takoðer šaljem i backup baze koju koristi aplikacija(potrebno je samo napraviti Restore opciju u  SQL Server Management Studio ).
+Datumi za unos su formata dd.mm.yyyy.
+Takoðer je potrebno promijeniti connection stringove u appconfigu i webconfigu za Entity Framework.
+Koristim Linq to Sql takoðer , pa je i za to potrebno promijeniti connection string u webconfigu.
+Lijep pozdrav
+

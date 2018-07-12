@@ -1,0 +1,200 @@
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\WebGrease.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DayPilot.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DayPilot.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebGrease.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DayPilot.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebGrease.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.pdb
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.dll
+C:\Users\Ivan\Documents\Visual Studio 2012\Projects\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.pdb
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\FarmeronAplikacija.pdb
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DayPilot.Web.Mvc.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Optimization.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebGrease.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\BLL.pdb
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DAL.pdb
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DHTMLX.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\EntityFramework.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Newtonsoft.Json.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Helpers.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Mvc.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.Razor.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.Data.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\WebMatrix.WebData.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.Core.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.csprojResolveAssemblyReference.cache
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.dll
+C:\Users\Ivan\Desktop\FarmeronNovoa\FarmeronNovo\FarmeronAplikacija2\FarmeronAplikacija\FarmeronAplikacija\obj\Debug\FarmeronAplikacija.pdb

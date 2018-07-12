@@ -1,0 +1,43 @@
+﻿@model DAL.Farmeri
+
+@{
+    ViewBag.Title = "Delete Farmer: " + Model.Ime;
+}
+
+<h2>Delete Photo: "@Model.Ime"</h2>
+
+<p>Are you sure you want to delete this photo?</p>
+
+@using (Html.BeginForm("Delete", "Farmeri", FormMethod.Post))
+{
+    
+            
+    <div class="photo-description">
+        @Html.DisplayFor(model => model.OIB)
+    </div>
+
+    <div class="photo-metadata">
+        <div>
+            <span class="display-label">
+                @Html.DisplayNameFor(model => model.Ime):
+            </span>
+            <span class="display-field">
+                @Html.DisplayFor(model => model.Ime)
+            </span>
+        </div>
+
+        <div>
+            <span class="display-label">
+                @Html.DisplayNameFor(model => model.Prezime):
+            </span>
+            <span class="display-field">
+                @Html.DisplayFor(model => model.Prezime)
+            </span>
+        </div>
+    </div>
+
+    <p>
+        <input type="submit" value="Delete" />
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

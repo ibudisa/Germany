@@ -1,0 +1,41 @@
+﻿@model DAL.Farmeri
+
+@{
+    ViewBag.Title = Model.Ime;
+}
+
+<h2>"@Model.ID"</h2>
+ 
+
+<div>
+    @Html.DisplayFor(model => model.OIB)
+</div>
+
+<div class="photo-metadata">
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.Ime):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.Ime)
+        </span>
+    </div>
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.Prezime):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.Prezime)
+        </span>
+    </div>
+        
+</div>
+
+ 
+
+<p>
+    @Html.ActionLink("Back to List", "Index") |
+    
+</p>

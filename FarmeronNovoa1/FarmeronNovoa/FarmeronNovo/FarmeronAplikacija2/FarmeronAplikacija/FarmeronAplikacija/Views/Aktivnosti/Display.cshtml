@@ -1,0 +1,68 @@
+﻿@model DAL.Aktivnosti
+
+@{
+    ViewBag.Title = Model.text;
+}
+
+<h2>"@Model.id"</h2>
+ 
+
+<div>
+    @Html.DisplayFor(model => model.id)
+</div>
+
+<div class="photo-metadata">
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.idFarmera):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.idFarmera)
+        </span>
+    </div>
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.text):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.text)
+        </span>
+    </div>
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.start_date):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.start_date)
+        </span>
+    </div>
+
+     <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.end_date):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.end_date)
+        </span>
+    </div>
+
+    <div>
+        <span class="display-label">
+            @Html.DisplayNameFor(model => model.stanje):
+        </span>
+        <span class="display-field">
+            @Html.DisplayFor(model => model.stanje)
+        </span>
+    </div>
+        
+</div>
+
+ 
+
+<p>
+    @Html.ActionLink("Back to List", "Index", new { id = Model.idFarmera }) 
+    
+</p>

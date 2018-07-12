@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FarmeronBazaModelStoreContainer" CdmEntityContainer="FarmeronBazaEntities">
+    <EntitySetMapping Name="Aktivnosti">
+      <EntityTypeMapping TypeName="FarmeronBazaModel.Aktivnosti">
+        <MappingFragment StoreEntitySet="Aktivnosti">
+          <ScalarProperty Name="stanje" ColumnName="stanje" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="idFarmera" ColumnName="idFarmera" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Farmeri">
+      <EntityTypeMapping TypeName="FarmeronBazaModel.Farmeri">
+        <MappingFragment StoreEntitySet="Farmeri">
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

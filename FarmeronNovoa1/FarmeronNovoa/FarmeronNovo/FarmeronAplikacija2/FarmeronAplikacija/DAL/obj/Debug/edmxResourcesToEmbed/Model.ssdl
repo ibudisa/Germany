@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FarmeronBazaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FarmeronBazaModelStoreContainer">
+    <EntitySet Name="Aktivnosti" EntityType="FarmeronBazaModel.Store.Aktivnosti" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Farmeri" EntityType="FarmeronBazaModel.Store.Farmeri" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Aktivnosti_Farmeri" Association="FarmeronBazaModel.Store.FK_Aktivnosti_Farmeri">
+      <End Role="Farmeri" EntitySet="Farmeri" />
+      <End Role="Aktivnosti" EntitySet="Aktivnosti" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aktivnosti">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idFarmera" Type="int" Nullable="false" />
+    <Property Name="text" Type="varchar" MaxLength="255" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="stanje" Type="varchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="Farmeri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OIB" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Ime" Type="varchar" MaxLength="20" />
+    <Property Name="Prezime" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_Aktivnosti_Farmeri">
+    <End Role="Farmeri" Type="FarmeronBazaModel.Store.Farmeri" Multiplicity="1" />
+    <End Role="Aktivnosti" Type="FarmeronBazaModel.Store.Aktivnosti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Farmeri">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Aktivnosti">
+        <PropertyRef Name="idFarmera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

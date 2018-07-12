@@ -1,0 +1,146 @@
+﻿@model DAL.Farmeri
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Farmer</h2>
+
+@section scripts {
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/bootstrap.css");
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    
+    @Scripts.Render("~/bundles/toastr")
+    <script src="~/Scripts/toastr.js"></script>
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+     
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // Hide the "busy" Gif at load:
+            $("#divProcessing").hide();
+
+            // Attach click handler to the submit button:
+
+
+            // Handle the form submit event, and make the Ajax request:
+            $("#form1").on("submit", function (event) {
+                event.preventDefault();
+
+                $('#af').addClass('fa fa-spinner fa-spin');
+
+                // Show the "busy" Gif:
+                $("#divProcessing").show();
+                var url = "/Farmeri/Edit";
+                var formData = $(this).serialize();
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: formData,
+                    dataType: "json",
+                    success: function (resp) {
+
+                        if (resp.Data == "Success") {
+
+                            // Hide the "busy" gif:
+                            $("#divProcessing").hide();
+
+                            // Do something useful with the data:
+                            $("<h3>" + resp.Djelatnik.Ime + "</h3>").appendTo("#divResult");
+
+                            DisplayS();
+                        }
+                        else {
+                            DisplayF();
+                        }
+                        window.location.href = "/Farmeri/Index";
+
+
+                    }
+                })
+            });
+        });
+     </script>
+
+     <script type="text/javascript">
+         function DisplayS() {
+             toastr.options.positionClass = 'toast-top-center'
+             toastr.success('Record updated successfully');
+         }
+         function DisplayF() {
+             toastr.options.positionClass = 'toast-top-center'
+             toastr.error('Record hasnt been updated');
+         }
+     </script>
+}
+
+     
+
+
+@using (Html.BeginForm("Edit", "Farmeri", FormMethod.Post, new { enctype = "multipart/form-data" ,id="form1"}))
+{
+    @Html.ValidationSummary(true)
+
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.ID):
+        </span>
+        <span class="editor-field">
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @Html.EditorFor(model => model.ID)
+            @Html.ValidationMessageFor(model => model.ID)
+        </span>
+    </div>
+            
+     
+
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.OIB):
+        </span>
+        <span class="editor-field">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @Html.EditorFor(model => model.OIB)
+            @Html.ValidationMessageFor(model => model.OIB)
+        </span>
+    </div>
+                        
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.Ime):
+        </span>
+        <span class="editor-field">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @Html.EditorFor(model => model.Ime)
+            
+        </span>
+    </div>
+
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.Prezime):
+        </span>
+        <span class="editor-field">
+             @Html.EditorFor(model => model.Prezime)
+            
+        </span>
+    </div>
+            
+    <p>
+        <button type="submit" class="btn btn-primary btn-md" value="Edit" id="btn" ><i id="af"></i>Edit</button>
+       
+
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+<div id="divProcessing">
+    <p>Processing, please wait . . . <img src="~/Content/DataTables-1.10.4/images/background.png" /></p>
+    
+</div>
+  
+// We want to display the result from our submission in here:
+<div id="divResult">
+</div>
+  
+
+ 

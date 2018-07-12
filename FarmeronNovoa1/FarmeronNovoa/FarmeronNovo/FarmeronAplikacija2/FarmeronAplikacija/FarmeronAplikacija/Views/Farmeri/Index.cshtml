@@ -1,0 +1,108 @@
+﻿@using System.Web.Optimization
+@model IEnumerable<DAL.Farmeri>
+
+
+
+@section scripts {
+     
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/jquery.dataTables.js"></script>
+    <script src="~/Scripts/TableTools.js"></script>
+    <link href="~/Content/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/TableTools.css" rel="stylesheet" />
+    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <script type="text/javascript">
+         
+        $(document).ready(function () {
+
+            $('#djelatnici').dataTable();
+         
+
+           /*
+            $('#SubmitName').click(function () {
+                var name = $('#Ime').val();
+                var url = "/Farmeri/WelcomeMessage";
+                $.get(url, { name: name }, function (data) {
+                    $("#data").html(data); 
+                });
+            });*/
+
+            $("a.btn-warning").click(function (event) {
+                event.preventDefault();
+                var link = this;
+                if (confirm("Are you sure that you want to delete this farmer?")) {
+                    $.ajax({
+                        type: "POST",
+                        url: link.href,
+                        success: function (data) {
+                            if (data == 'Success')
+                            {
+                                $(link).parents("tr").remove();
+                            }
+                            else
+                            {
+                                alert("This user cannot be deleted");
+                            }
+                            
+                        } 
+                    });
+                }
+            });
+            
+        })
+    </script>
+
+}
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<p> 
+    @Html.ActionLink("Create New", "Create") 
+</p> 
+<table data-toggle="table" id="djelatnici" class="table table-striped table-bordered table-condensed table-hover table table-responsive" data-pagination="true" data-search="true"> 
+   <thead> 
+       <tr > 
+        <th data-field="ID" data-align="right" data-sortable="true">ID</th>
+        <th data-field="OIB" data-align="center" data-sortable="true">OIB</th>
+        <th data-field="Ime" data-sortable="true">Ime</th>
+        <th data-field="Prezime" data-sortable="true">Prezime</th>
+        <th >Display Edit Delete</th>
+    </tr> 
+ </thead> 
+    <tbody>
+@foreach (var item in Model) { 
+       
+        <tr> 
+        <td> 
+            @Html.DisplayFor(modelItem => item.ID)
+             <a href="/Aktivnosti/Index/?id=@item.ID"><i class="fa fa-info"></i>  Aktivnosti</a>
+        </td> 
+        <td> 
+            @Html.DisplayFor(modelItem => item.OIB) 
+        </td> 
+        <td> 
+            @Html.DisplayFor(modelItem => item.Ime) 
+        </td> 
+        <td> 
+            @Html.DisplayFor(modelItem => item.Prezime) 
+        </td> 
+        <td> 
+            <a href="/Farmeri/Display/@item.ID" class="btn btn-info btn-sm"><i class="fa fa-info"></i> Display</a>
+            <a href="/Farmeri/Edit/@item.ID" class="btn btn-primary btn-sm"><i class="fa fa-pencil fa-fw"></i>Edit</a>
+           <a href="/Farmeri/Delete/@item.ID" class="btn btn-warning btn-sm"><i class="fa fa-trash-o fa-fw"></i>Delete</a> 
+        </td> 
+    </tr> 
+}     </tbody>
+ 
+</table>
+
+ 
+</br>
+<a href="/Calendar/Index/" class="btn btn-info btn-sm">Kalendar Aktivnosti</a>
+ 
+ 

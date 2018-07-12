@@ -1,0 +1,125 @@
+﻿@model DAL.Aktivnosti
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Aktivnosti</h2>
+@section scripts {
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/bootstrap.css");
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+   
+    @Scripts.Render("~/bundles/toastr")
+    <script src="~/Scripts/toastr.js"></script>
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+
+      <script type="text/javascript">
+          $(document).ready(function () {
+
+              $("#datepickerfr").datepicker();
+              $("#datepickerto").datepicker();
+
+            $("#form1").on("submit", function (event) {
+
+                event.preventDefault();
+
+                $('#af').addClass('fa fa-spinner fa-spin');
+                var data = $(this).serialize();
+                var url = "/Aktivnosti/Edit";
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    success: function (response) {
+                         
+                         DisplayS();
+                         window.location.href = "/Aktivnosti/Index/?id="+response.idFarmera;
+                           
+                        
+                    }
+                });
+            });
+        })
+    </script>
+     <script type="text/javascript">
+         function DisplayS() {
+             toastr.options.positionClass = 'toast-top-center'
+             toastr.success('Record updated successfully');
+         }
+
+     </script>
+
+     
+ }
+
+@using (Html.BeginForm("Edit", "Aktivnosti", FormMethod.Post, new { enctype = "multipart/form-data",id="form1" }))
+{
+    @Html.ValidationSummary(true)
+<div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.id):
+        </span>
+        <span class="editor-field">
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  @Html.EditorFor(model => model.id)
+            @Html.ValidationMessageFor(model => model.id)
+        </span>
+    </div>
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.idFarmera):
+        </span>
+        <span class="editor-field">
+            @Html.EditorFor(model => model.idFarmera)
+           &nbsp @Html.ValidationMessageFor(model => model.idFarmera)
+        </span>
+    </div>
+                        
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.text):
+        </span>
+        <span class="editor-field">
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  @Html.EditorFor(model => model.text)
+            
+        </span>
+    </div>
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.start_date):
+        </span>
+        <span class="editor-field">
+            @Html.EditorFor(model => model.start_date)
+            
+        </span>
+    </div>
+    
+    
+
+   <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.end_date):
+        </span>
+        <span class="editor-field">
+         &nbsp @Html.EditorFor(model => model.end_date)
+           
+        </span>
+    </div>
+    
+    <div>
+        <span class="editor-label">
+            @Html.LabelFor(model => model.stanje):
+        </span>
+        <span class="editor-field">
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  @Html.EditorFor(model => model.stanje)
+            
+        </span>
+    </div>
+            
+    <p>
+        <button type="submit" class="btn btn-primary btn-md" value="Edit" id="btn" ><i id="af"></i>Edit</button>
+        @Html.ActionLink("Back to List", "Index", new { id = Model.idFarmera })
+    </p>
+}
