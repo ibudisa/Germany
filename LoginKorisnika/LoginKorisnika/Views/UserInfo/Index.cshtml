@@ -1,0 +1,105 @@
+﻿@model List<DAL.UserInfo>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            RegistrationId
+        </th>
+        <th>
+            LoginCount
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+   @for (int i = 0; i < Model.Count; i++)
+    {
+        <tr>
+            <td>                
+                @Html.DisplayFor(x => @Model[i].Id)
+            </td>
+            <td>
+                @Html.DisplayFor(x => @Model[i].Email)
+            </td>
+            <td>
+                @Html.DisplayFor(x => @Model[i].FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(x => @Model[i].LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(x => @Model[i].RegistrationId)
+            </td>
+            <td>
+                @Html.DisplayFor(x => @Model[i].LoginCount)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = @Model[i].Id }) |
+                <a href="javascript:void(0)" id="@Model[i].Id" class="btn btn-danger delete-prompt">Delete</a> 
+            </td>
+        </tr>
+    }
+</table> 
+</br>
+</br>
+<a href="UserLogin/Index" title="Logins Information">Logins</a>
+
+<!--Bootstrap css cdn--->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!---Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--Bootstrap js cdn-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--script goes here...-->
+<script>
+    $(document).ready(function () {
+        //start of the document ready function
+        //delcaring global variable to hold primary key value.
+        var Id;
+        $('.delete-prompt').click(function () {
+            var confirmMessageBox = confirm('Are you sure you wish to delete this record ?');
+            if (confirmMessageBox) {
+                Id = $(this).attr('id');
+                if (Id != '') {
+                    $.ajax({
+                        url: '/UserInfo/Delete',
+                        data: { 'Id': Id },
+                        type: 'get',
+                        success: function (data) {
+                            if (data) {
+                                location = location.href;
+                            }
+                        }, error: function (err) {
+                            alert(err.statusText);
+                        }
+                    });
+                }
+            }
+
+        });
+
+        //end of the docuement ready function
+    });
+</script>

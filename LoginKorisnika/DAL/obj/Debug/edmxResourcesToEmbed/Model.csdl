@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WienerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="PasswordSalt" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserInfoes" Relationship="Self.FK_UserInfo_UserInfo" FromRole="Registration" ToRole="UserInfo" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegistrationId" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LoginCount" Type="Int32" />
+    <NavigationProperty Name="Registration" Relationship="Self.FK_UserInfo_UserInfo" FromRole="UserInfo" ToRole="Registration" />
+    <NavigationProperty Name="UserLogins" Relationship="WienerModel.FK_UserLogin_UserInfo" FromRole="UserInfo" ToRole="UserLogin" />
+  </EntityType>
+  <Association Name="FK_UserInfo_UserInfo">
+    <End Role="Registration" Type="Self.Registration" Multiplicity="0..1" />
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Registration">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserInfo">
+        <PropertyRef Name="RegistrationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WienerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Registrations" EntityType="Self.Registration" />
+    <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_UserInfo_UserInfo" Association="Self.FK_UserInfo_UserInfo">
+      <End Role="Registration" EntitySet="Registrations" />
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+    </AssociationSet>
+    <EntitySet Name="UserLogins" EntityType="WienerModel.UserLogin" />
+    <AssociationSet Name="FK_UserLogin_UserInfo" Association="WienerModel.FK_UserLogin_UserInfo">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="UserLogin" EntitySet="UserLogins" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="FirstName" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
+    <Property Name="LogonDate" Type="DateTime" Precision="3" />
+    <Property Name="Browser" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserInfo" Relationship="WienerModel.FK_UserLogin_UserInfo" FromRole="UserLogin" ToRole="UserInfo" />
+  </EntityType>
+  <Association Name="FK_UserLogin_UserInfo">
+    <End Type="WienerModel.UserInfo" Role="UserInfo" Multiplicity="0..1" />
+    <End Type="WienerModel.UserLogin" Role="UserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

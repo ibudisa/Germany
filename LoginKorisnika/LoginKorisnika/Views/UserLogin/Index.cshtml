@@ -1,0 +1,57 @@
+﻿@model List<DAL.UserLogin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            UserId
+        </th>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            LogonDate
+        </th>
+        <th>
+            Browser
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(x => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(x => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(x => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(x => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(x => item.LogonDate)
+            </td>
+            <td>
+                @Html.DisplayFor(x => item.Browser)
+            </td>
+        </tr>
+    }
+</table> 
+</br>
+</br>
+</br>
+<a href="javascript:history.back()">Back to List</a>
