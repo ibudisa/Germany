@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AplikacijaNaselja", "AplikacijaNaselja\AplikacijaNaselja.csproj", "{D93E6B59-68F5-4AD9-8CB4-001605BF6E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{343A0AB6-4D2E-4DFD-BAA4-A10E65A0E246}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93E6B59-68F5-4AD9-8CB4-001605BF6E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93E6B59-68F5-4AD9-8CB4-001605BF6E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93E6B59-68F5-4AD9-8CB4-001605BF6E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93E6B59-68F5-4AD9-8CB4-001605BF6E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343A0AB6-4D2E-4DFD-BAA4-A10E65A0E246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343A0AB6-4D2E-4DFD-BAA4-A10E65A0E246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343A0AB6-4D2E-4DFD-BAA4-A10E65A0E246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343A0AB6-4D2E-4DFD-BAA4-A10E65A0E246}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2B8319B-07AD-414F-BE76-22282F68FE72}
+	EndGlobalSection
+EndGlobal

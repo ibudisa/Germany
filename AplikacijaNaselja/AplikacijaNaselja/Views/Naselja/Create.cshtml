@@ -1,0 +1,66 @@
+﻿@model AplikacijaNaselja.Models.NaseljaViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend></legend>
+
+
+        <div class="editor-label">
+            Naziv
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Naziv)
+            @Html.ValidationMessageFor(model => model.Naziv)
+        </div>
+
+        <div class="editor-label">
+            Drzava
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Drzava", ViewBag.Drzave as SelectList)
+
+        </div>
+
+        <div class="editor-label">
+            Poštanski broj
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PostanskiBroj)
+            @Html.ValidationMessageFor(model => model.PostanskiBroj)
+        </div>
+
+        <p>
+            <input type="button" value="Create" onclick="DodajNaselje1()" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Close", "Index")
+</div>
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/themes/base/jquery-ui.css")" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/jquery-1.12.4.min.js"></script>
+
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+<script type="text/javascript">
+
+    function DodajNaselje1() {
+
+        var Naziv = $("#Naziv").val();
+        var Drzava = $("#Drzava").val();
+        var PostanskiBroj = $("#PostanskiBroj").val();
+
+        var Naselje = {
+            "Naziv": Naziv, "Drzava": Drzava,
+            "PostanskiBroj": PostanskiBroj
+        };
+
+        $.post("/Naselja/Create", Naselje,
+            function (data) { if (data == 0) { location = location.href; } }, 'json');
+    }
+</script>
+

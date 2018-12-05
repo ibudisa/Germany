@@ -1,0 +1,102 @@
+﻿@model List<AplikacijaNaselja.Models.NaseljaViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <style type="text/css">
+        .grid {
+            width: 100%;
+        }
+    </style>
+}
+
+<h2>Index</h2>
+
+<div style="padding:7px 0;">
+    <input type="button" value="Dodaj novo naselje" onclick="DodajNaselje()" />
+</div>
+
+<div id="OpenDialog" class="modal" role="dialog"></div>
+
+<h3>Prikaz naselja</h3>
+
+<div style="width:100%;">
+    @{
+        WebGrid grid = new WebGrid(Model);
+        @grid.GetHtml(
+         tableStyle: "grid",
+         fillEmptyRows: false,
+         mode: WebGridPagerModes.All,
+         firstText: "<< First",
+         previousText: "< Prev",
+         nextText: "Next >",
+         lastText: "Last >>",
+         columns: new[] {
+         grid.Column("Id",header: "ID"),
+         grid.Column("Naziv",header: "Naziv"),
+         grid.Column("Drzava"),
+         grid.Column("PostanskiBroj"),
+         grid.Column("Id", header: "Action", canSort:false,
+
+         format: @<text>
+            @Html.Raw("<img src='/Images/Edit.png' title='Edit' onclick='UrediNaselje(" + item.Id + ")' />")
+            @Html.Raw("<img src='/Images/Delete.png' title='Delete' onclick='ObrisiNaselje(" + item.Id + ")' />")
+        </text>
+        )
+     })
+    }
+</div>
+</br>
+</br>
+</br>
+<label>Ukupan broj naselja:@ViewBag.BrojNaselja</label>
+
+<link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/themes/base/jquery-ui.css")" rel="stylesheet" type="text/css" />
+ 
+<script src="~/Scripts/jquery-1.12.4.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+<script type="text/javascript">
+
+
+    function DodajNaselje() {
+        var ph = $("#OpenDialog");
+        ph.load("/Naselja/Create", function () {
+            ph.dialog({
+                modal: true,
+                width: 500,
+                height: 400,
+                title: "Dodaj novo naselje",
+                resizable: false
+            });
+        });
+        ph.modal.dialog('show');
+    }
+
+    function UrediNaselje(ID) {
+        var ph = $("#OpenDialog");
+        ph.load("/Naselja/Edit?id=" + ID, function () {
+            ph.dialog({
+                modal: true,
+                width: 500,
+                height: 400,
+                title: "Uredi naselje",
+                resizable: false
+            });
+        });
+        ph.modal.dialog('show');
+    }
+
+    function ObrisiNaselje(ID) {
+        if (confirm("Jeste li sigurni da želite obrisati naselje sa brojem? " + ID)) {
+            var data = { 'id': ID }
+            $.post('/Naselja/Delete', data,
+                function (data) {
+                    if (data == true)
+                        location = location.href;
+                    else
+                        alert("Nije obrisan podatak");
+                });
+        }
+    }
+</script>

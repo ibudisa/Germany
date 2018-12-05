@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestMVCModelStoreContainer" CdmEntityContainer="TestMVCEntities">
+    <EntitySetMapping Name="Naseljas">
+      <EntityTypeMapping TypeName="TestMVCModel.Naselja">
+        <MappingFragment StoreEntitySet="Naselja">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Drzava" ColumnName="Drzava" />
+          <ScalarProperty Name="PostanskiBroj" ColumnName="PostanskiBroj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SifrarnikDrzavas">
+      <EntityTypeMapping TypeName="TestMVCModel.SifrarnikDrzava">
+        <MappingFragment StoreEntitySet="SifrarnikDrzava">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
