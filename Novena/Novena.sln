@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novena", "Novena\Novena.csproj", "{895798FF-AEC2-4BC7-8B87-33506F4B605F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{EBE4FCE4-22C7-4D17-897E-9FA3A8BB49EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895798FF-AEC2-4BC7-8B87-33506F4B605F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895798FF-AEC2-4BC7-8B87-33506F4B605F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895798FF-AEC2-4BC7-8B87-33506F4B605F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895798FF-AEC2-4BC7-8B87-33506F4B605F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE4FCE4-22C7-4D17-897E-9FA3A8BB49EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE4FCE4-22C7-4D17-897E-9FA3A8BB49EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE4FCE4-22C7-4D17-897E-9FA3A8BB49EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE4FCE4-22C7-4D17-897E-9FA3A8BB49EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFCA8C2A-1C6B-425C-A2AD-64B5FF0D7603}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,210 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UrediAnketu.aspx.cs" Inherits="Novena.Admin.UrediAnketu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Administracija<br />
+            <br />
+            <asp:GridView ID="GridViewAnketa" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" Width="475px" OnSelectedIndexChanging="GridViewAnketa_SelectedIndexChanging">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
+                    <asp:BoundField DataField="Naziv" HeaderText="Naziv" SortExpression="Naziv" />
+                    <asp:BoundField DataField="Datum" HeaderText="Datum" SortExpression="Datum" />
+                    <asp:CheckBoxField DataField="Aktivna" HeaderText="Aktivna" SortExpression="Aktivna" />
+                </Columns>
+            </asp:GridView>
+            <br />
+        </div>
+        <p>
+            &nbsp;</p>
+        <asp:Panel ID="PanelDetalji" runat="server" Height="264px" Width="490px" Visible="False">
+            <br>
+            </br>
+            Pitanja
+            <br>
+            </br>
+            <br>
+            <asp:GridView ID="GridViewPitanja" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" DataKeyNames="Id" OnRowCommand="GridViewPitanja_RowCommand" OnSelectedIndexChanging="GridViewPitanja_SelectedIndexChanging" ShowFooter="True" Width="475px">
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
+                    <asp:TemplateField HeaderText="AnketaId" SortExpression="AnketaId">
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtAnketaId" runat="server" Text='<%# Bind("AnketaId") %>'></asp:TextBox>
+                        </FooterTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("AnketaId") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="TekstPitanja" SortExpression="TekstPitanja">
+                        <FooterTemplate>
+                            <asp:TextBox ID="txtTekstPitanja" runat="server" Text='<%# Bind("TekstPitanja") %>'></asp:TextBox>
+                        </FooterTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("TekstPitanja") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField>
+                        <FooterTemplate>
+                            <asp:LinkButton ID="lnkInsert" runat="server" CommandName="ADD_NEW_ROW" Text="Insert"></asp:LinkButton>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </asp:Panel>
+    <p>
+        &nbsp;</p>
+        <asp:Panel ID="pnlOdgovori" runat="server" Height="215px" Width="673px" Visible="False">
+            <br />
+            Odgovori<br />
+            <asp:GridView ID="GridViewOdgovori" runat="server" AutoGenerateColumns="False" DataKeyNames="Id"
+                  AutoGenerateEditButton="True"  AutoGenerateDeleteButton="True"
+                        OnPageIndexChanging="GridViewOdgovori_PageIndexChanging"  
+                        onrowcancelingedit="GridViewOdgovori_RowCancelingEdit"  
+                        onrowediting="GridViewOdgovori_RowEditing"  
+                        onrowupdating="GridViewOdgovori_RowUpdating" OnRowCommand="GridViewOdgovori_RowCommand" OnRowDeleting="GridViewOdgovori_RowDeleting" ShowFooter="True" Width="463px">  
+                <Columns>
+                    <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" />
+                    <asp:TemplateField HeaderText="PitanjeId" SortExpression="PitanjeId">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtPitanjeId" runat="server" Text='<%# Bind("PitanjeId") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("PitanjeId") %>'></asp:Label>
+                        </ItemTemplate>
+                         <FooterTemplate>
+                            <asp:TextBox ID="txtPitanjeId1" runat="server" Text='<%# Bind("PitanjeId") %>'></asp:TextBox>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="TekstOdgovora" SortExpression="TekstOdgovora">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txtTekstOdgovora" runat="server" Text='<%# Bind("TekstOdgovora") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("TekstOdgovora") %>'></asp:Label>
+                        </ItemTemplate>
+                         <FooterTemplate>
+                            <asp:TextBox ID="txtTekstOdgovora1" runat="server" Text='<%# Bind("TekstOdgovora") %>'></asp:TextBox>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Aktivan" SortExpression="Aktivan">
+                        <EditItemTemplate>
+                            <asp:CheckBox ID="chkAktivan" runat="server" Checked='<%# Bind("Aktivan") %>' />
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Aktivan") %>'  />
+                        </ItemTemplate>
+                           <FooterTemplate>
+                            <asp:CheckBox ID="chkAktivan1" runat="server" Checked='<%# Bind("Aktivan") %>'></asp:CheckBox>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Tocan" SortExpression="Tocan">
+                        <EditItemTemplate>
+                            <asp:CheckBox ID="chkTocan" runat="server" Checked='<%# Bind("Tocan") %>' />
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="CheckBox2" runat="server" Checked='<%# Bind("Tocan") %>' />
+                        </ItemTemplate>
+                           <FooterTemplate>
+                            <asp:CheckBox ID="chkTocan1" runat="server" Checked='<%# Bind("Tocan") %>'></asp:CheckBox>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                    <asp:BoundField DataField="BrojOdgovora" HeaderText="BrojOdgovora" SortExpression="BrojOdgovora" />
+                    <asp:TemplateField>
+                        <FooterTemplate>
+                            <asp:LinkButton ID="lnkInsert" runat="server" CommandName="ADD_NEW" Text="Insert"></asp:LinkButton>
+                        </FooterTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+            <br />
+            <br />
+        </asp:Panel>
+    </form>
+    </body>
+</html>

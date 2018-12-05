@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PosaoAnketaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Anketa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Naziv" Type="varchar" MaxLength="50" />
+    <Property Name="Datum" Type="datetime" />
+    <Property Name="Aktivna" Type="bit" />
+  </EntityType>
+  <EntityType Name="Odgovor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PitanjeId" Type="int" />
+    <Property Name="TekstOdgovora" Type="nvarchar" MaxLength="50" />
+    <Property Name="Aktivan" Type="bit" />
+    <Property Name="Tocan" Type="bit" />
+    <Property Name="BrojOdgovora" Type="int" />
+  </EntityType>
+  <EntityType Name="Pitanje">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnketaId" Type="int" />
+    <Property Name="TekstPitanja" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Statistika">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPitanja" Type="int" />
+    <Property Name="IdOdgovora" Type="int" />
+  </EntityType>
+  <Association Name="FK_Odgovor_Pitanje">
+    <End Role="Pitanje" Type="Self.Pitanje" Multiplicity="0..1" />
+    <End Role="Odgovor" Type="Self.Odgovor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pitanje">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Odgovor">
+        <PropertyRef Name="PitanjeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pitanje_Anketa">
+    <End Role="Anketa" Type="Self.Anketa" Multiplicity="0..1" />
+    <End Role="Pitanje" Type="Self.Pitanje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Anketa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pitanje">
+        <PropertyRef Name="AnketaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PosaoAnketaModelStoreContainer">
+    <EntitySet Name="Anketa" EntityType="Self.Anketa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Odgovor" EntityType="Self.Odgovor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pitanje" EntityType="Self.Pitanje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Statistika" EntityType="Self.Statistika" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Odgovor_Pitanje" Association="Self.FK_Odgovor_Pitanje">
+      <End Role="Pitanje" EntitySet="Pitanje" />
+      <End Role="Odgovor" EntitySet="Odgovor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pitanje_Anketa" Association="Self.FK_Pitanje_Anketa">
+      <End Role="Anketa" EntitySet="Anketa" />
+      <End Role="Pitanje" EntitySet="Pitanje" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

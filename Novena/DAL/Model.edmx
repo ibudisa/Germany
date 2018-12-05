@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PosaoAnketaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Anketa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Naziv" Type="varchar" MaxLength="50" />
+          <Property Name="Datum" Type="datetime" />
+          <Property Name="Aktivna" Type="bit" />
+        </EntityType>
+        <EntityType Name="Odgovor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PitanjeId" Type="int" />
+          <Property Name="TekstOdgovora" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aktivan" Type="bit" />
+          <Property Name="Tocan" Type="bit" />
+          <Property Name="BrojOdgovora" Type="int" />
+        </EntityType>
+        <EntityType Name="Pitanje">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AnketaId" Type="int" />
+          <Property Name="TekstPitanja" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="Statistika">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPitanja" Type="int" />
+          <Property Name="IdOdgovora" Type="int" />
+        </EntityType>
+        <Association Name="FK_Odgovor_Pitanje">
+          <End Role="Pitanje" Type="Self.Pitanje" Multiplicity="0..1" />
+          <End Role="Odgovor" Type="Self.Odgovor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pitanje">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Odgovor">
+              <PropertyRef Name="PitanjeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pitanje_Anketa">
+          <End Role="Anketa" Type="Self.Anketa" Multiplicity="0..1" />
+          <End Role="Pitanje" Type="Self.Pitanje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anketa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pitanje">
+              <PropertyRef Name="AnketaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PosaoAnketaModelStoreContainer">
+          <EntitySet Name="Anketa" EntityType="Self.Anketa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Odgovor" EntityType="Self.Odgovor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pitanje" EntityType="Self.Pitanje" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Statistika" EntityType="Self.Statistika" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Odgovor_Pitanje" Association="Self.FK_Odgovor_Pitanje">
+            <End Role="Pitanje" EntitySet="Pitanje" />
+            <End Role="Odgovor" EntitySet="Odgovor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pitanje_Anketa" Association="Self.FK_Pitanje_Anketa">
+            <End Role="Anketa" EntitySet="Anketa" />
+            <End Role="Pitanje" EntitySet="Pitanje" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PosaoAnketaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PosaoAnketaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Anketas" EntityType="PosaoAnketaModel.Anketa" />
+          <EntitySet Name="Odgovors" EntityType="PosaoAnketaModel.Odgovor" />
+          <EntitySet Name="Pitanjes" EntityType="PosaoAnketaModel.Pitanje" />
+          <AssociationSet Name="FK_Pitanje_Anketa" Association="PosaoAnketaModel.FK_Pitanje_Anketa">
+            <End Role="Anketa" EntitySet="Anketas" />
+            <End Role="Pitanje" EntitySet="Pitanjes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Odgovor_Pitanje" Association="PosaoAnketaModel.FK_Odgovor_Pitanje">
+            <End Role="Pitanje" EntitySet="Pitanjes" />
+            <End Role="Odgovor" EntitySet="Odgovors" />
+          </AssociationSet>
+          <EntitySet Name="Statistikas" EntityType="PosaoAnketaModel.Statistika" />
+        </EntityContainer>
+        <EntityType Name="Anketa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Naziv" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Datum" Type="DateTime" Precision="3" />
+          <Property Name="Aktivna" Type="Boolean" />
+          <NavigationProperty Name="Pitanjes" Relationship="PosaoAnketaModel.FK_Pitanje_Anketa" FromRole="Anketa" ToRole="Pitanje" />
+        </EntityType>
+        <EntityType Name="Odgovor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PitanjeId" Type="Int32" />
+          <Property Name="TekstOdgovora" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aktivan" Type="Boolean" />
+          <Property Name="Tocan" Type="Boolean" />
+          <NavigationProperty Name="Pitanje" Relationship="PosaoAnketaModel.FK_Odgovor_Pitanje" FromRole="Odgovor" ToRole="Pitanje" />
+          <Property Name="BrojOdgovora" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Pitanje">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnketaId" Type="Int32" />
+          <Property Name="TekstPitanja" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Anketa" Relationship="PosaoAnketaModel.FK_Pitanje_Anketa" FromRole="Pitanje" ToRole="Anketa" />
+          <NavigationProperty Name="Odgovors" Relationship="PosaoAnketaModel.FK_Odgovor_Pitanje" FromRole="Pitanje" ToRole="Odgovor" />
+        </EntityType>
+        <Association Name="FK_Pitanje_Anketa">
+          <End Type="PosaoAnketaModel.Anketa" Role="Anketa" Multiplicity="0..1" />
+          <End Type="PosaoAnketaModel.Pitanje" Role="Pitanje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Anketa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pitanje">
+              <PropertyRef Name="AnketaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Odgovor_Pitanje">
+          <End Type="PosaoAnketaModel.Pitanje" Role="Pitanje" Multiplicity="0..1" />
+          <End Type="PosaoAnketaModel.Odgovor" Role="Odgovor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pitanje">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Odgovor">
+              <PropertyRef Name="PitanjeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Statistika">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdOdgovora" Type="Int32" />
+          <Property Name="IdPitanja" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PosaoAnketaModelStoreContainer" CdmEntityContainer="PosaoAnketaEntities">
+          <EntitySetMapping Name="Anketas">
+            <EntityTypeMapping TypeName="PosaoAnketaModel.Anketa">
+              <MappingFragment StoreEntitySet="Anketa">
+                <ScalarProperty Name="Aktivna" ColumnName="Aktivna" />
+                <ScalarProperty Name="Datum" ColumnName="Datum" />
+                <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Odgovors">
+            <EntityTypeMapping TypeName="PosaoAnketaModel.Odgovor">
+              <MappingFragment StoreEntitySet="Odgovor">
+                <ScalarProperty Name="BrojOdgovora" ColumnName="BrojOdgovora" />
+                <ScalarProperty Name="Tocan" ColumnName="Tocan" />
+                <ScalarProperty Name="Aktivan" ColumnName="Aktivan" />
+                <ScalarProperty Name="TekstOdgovora" ColumnName="TekstOdgovora" />
+                <ScalarProperty Name="PitanjeId" ColumnName="PitanjeId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pitanjes">
+            <EntityTypeMapping TypeName="PosaoAnketaModel.Pitanje">
+              <MappingFragment StoreEntitySet="Pitanje">
+                <ScalarProperty Name="TekstPitanja" ColumnName="TekstPitanja" />
+                <ScalarProperty Name="AnketaId" ColumnName="AnketaId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Statistikas">
+            <EntityTypeMapping TypeName="PosaoAnketaModel.Statistika">
+              <MappingFragment StoreEntitySet="Statistika">
+                <ScalarProperty Name="IdPitanja" ColumnName="IdPitanja" />
+                <ScalarProperty Name="IdOdgovora" ColumnName="IdOdgovora" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

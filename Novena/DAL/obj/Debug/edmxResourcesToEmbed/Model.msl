@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PosaoAnketaModelStoreContainer" CdmEntityContainer="PosaoAnketaEntities">
+    <EntitySetMapping Name="Anketas">
+      <EntityTypeMapping TypeName="PosaoAnketaModel.Anketa">
+        <MappingFragment StoreEntitySet="Anketa">
+          <ScalarProperty Name="Aktivna" ColumnName="Aktivna" />
+          <ScalarProperty Name="Datum" ColumnName="Datum" />
+          <ScalarProperty Name="Naziv" ColumnName="Naziv" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Odgovors">
+      <EntityTypeMapping TypeName="PosaoAnketaModel.Odgovor">
+        <MappingFragment StoreEntitySet="Odgovor">
+          <ScalarProperty Name="BrojOdgovora" ColumnName="BrojOdgovora" />
+          <ScalarProperty Name="Tocan" ColumnName="Tocan" />
+          <ScalarProperty Name="Aktivan" ColumnName="Aktivan" />
+          <ScalarProperty Name="TekstOdgovora" ColumnName="TekstOdgovora" />
+          <ScalarProperty Name="PitanjeId" ColumnName="PitanjeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pitanjes">
+      <EntityTypeMapping TypeName="PosaoAnketaModel.Pitanje">
+        <MappingFragment StoreEntitySet="Pitanje">
+          <ScalarProperty Name="TekstPitanja" ColumnName="TekstPitanja" />
+          <ScalarProperty Name="AnketaId" ColumnName="AnketaId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistikas">
+      <EntityTypeMapping TypeName="PosaoAnketaModel.Statistika">
+        <MappingFragment StoreEntitySet="Statistika">
+          <ScalarProperty Name="IdPitanja" ColumnName="IdPitanja" />
+          <ScalarProperty Name="IdOdgovora" ColumnName="IdOdgovora" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
