@@ -10,12 +10,36 @@
 }
 
 <h2>Index</h2>
+<style>
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+</style>
 
 <div style="padding:7px 0;">
     <input type="button" value="Dodaj novo naselje" onclick="DodajNaselje()" />
 </div>
 
-<div id="OpenDialog" class="modal" role="dialog"></div>
+<div class="modal fade" id="OpenDialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title">AddEdit Naselje</h3>
+            </div>
+            <div class="modal-body" id="myModalBodyDiv1">
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
 
 <h3>Prikaz naselja</h3>
 
@@ -38,21 +62,28 @@
          grid.Column("Id", header: "Action", canSort:false,
 
          format: @<text>
-            @Html.Raw("<img src='/Images/Edit.png' title='Edit' onclick='UrediNaselje(" + item.Id + ")' />")
-            @Html.Raw("<img src='/Images/Delete.png' title='Delete' onclick='ObrisiNaselje(" + item.Id + ")' />")
+    @Html.Raw("<img src='/Images/Edit.png' title='Edit' onclick='UrediNaselje(" + item.Id + ")' />")
+    @Html.Raw("<img src='/Images/Delete.png' title='Delete' onclick='ObrisiNaselje(" + item.Id + ")' />")
         </text>
-        )
-     })
+                                            )
+                                                                         })
     }
 </div>
-</br>
-</br>
-</br>
+    </br>
+    </br>
+    </br>
 <label>Ukupan broj naselja:@ViewBag.BrojNaselja</label>
 
 <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
 <link href="@Url.Content("~/Content/themes/base/jquery-ui.css")" rel="stylesheet" type="text/css" />
- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script src="~/Scripts/jquery-1.12.4.min.js"></script>
 <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
 
@@ -60,31 +91,27 @@
 
 
     function DodajNaselje() {
-        var ph = $("#OpenDialog");
-        ph.load("/Naselja/Create", function () {
-            ph.dialog({
-                modal: true,
-                width: 500,
-                height: 400,
-                title: "Dodaj novo naselje",
-                resizable: false
-            });
+
+        var url = "/Naselja/Create";
+        $("#myModalBodyDiv1").load(url, function () {
+
         });
-        ph.modal.dialog('show');
+        $("#OpenDialog").modal('show');
+
     }
 
     function UrediNaselje(ID) {
         var ph = $("#OpenDialog");
         ph.load("/Naselja/Edit?id=" + ID, function () {
-            ph.dialog({
-                modal: true,
+            ph.modal({
+                dialog: true,
                 width: 500,
                 height: 400,
                 title: "Uredi naselje",
                 resizable: false
             });
         });
-        ph.modal.dialog('show');
+        ph.modal('show');
     }
 
     function ObrisiNaselje(ID) {
